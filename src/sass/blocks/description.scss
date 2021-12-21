@@ -1,0 +1,33 @@
+.description {
+    background: #fff;
+    width: 100%;
+    padding: 0;
+    &__title {
+        text-align: center;
+        margin-bottom: 3rem;
+        padding: 1rem;
+        font-size: 48px;
+        font-weight: bold;
+        width: 100%;
+    }
+}
+
+.orange-bg {
+    background: url(../../../public/img/description/advantages_orange-bg.jpg) 0 0 repeat;
+    background-size: cover;
+    padding-top: 250px;
+    margin-top: -300px;
+    padding-bottom: 4rem;
+}
+
+.item__text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.item__text span {
+    font-weight: normal;
+    font-size: 16px;
+}

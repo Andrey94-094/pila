@@ -1,0 +1,160 @@
+.intro {
+    position: relative;
+    margin-bottom: 15rem;
+    padding-top: 30rem;
+    padding-bottom: 20rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../public/img/intro/bg.jpg');
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        &-item {
+            position: relative;
+            padding: 1.5rem 0;
+            padding-left: 5.5rem;
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 1;
+            text-align: left;
+            color: $white;
+            i {
+                position: absolute;
+                bottom: 0.5rem;
+                left: 0;
+                z-index: 1;
+                font-size: 4.2rem;
+                color: $green;
+            }
+        }
+        @media (max-width: 767px) {
+            align-items: center;
+        }
+    }
+    &__title {
+        padding-bottom: 4rem;
+        font-weight: 800;
+        font-size: 6.5rem;
+        line-height: 1;
+        text-align: left;
+        color: $white;
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 1rem;
+        min-width: 34rem;
+        height: 25rem;
+        padding: 7rem 3rem 4rem 3rem;
+        background-color: $white;
+        @media (max-width: 767px) {
+            margin-top: 4rem;
+            width: 70%;
+        }
+    }
+    &__input {
+        position: relative;
+        input {
+            display: block;
+            transition: border-color 0.2s linear;
+            border: 2px solid rgba(#000, 0.2);
+            border-radius: 0.5rem;
+            width: 100%;
+            padding: 1.5rem 0.5rem 1.5rem 4rem;
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 1;
+            color: $green;
+            &::placeholder {
+                transition: color 0.2s linear;
+                font-weight: 500;
+                color: #757575;
+            }
+        }
+        i {
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            left: 1.25rem;
+            z-index: 1;
+            transition: color 0.2s linear;
+            font-size: 2rem;
+            color: rgba(#000, 0.4);
+        }
+        &:hover {
+            input {
+                border-color: rgba($green, 0.7);
+                &::placeholder {
+                    color: rgba($green, 0.9);
+                }
+            }
+            i {
+                color: rgba($green, 0.7);
+            }
+        }
+    }
+    &__btn {
+        display: block;
+        transition: box-shadow 0.2s linear, background-color 0.2s linear, color 0.2s linear;
+        border: 0;
+        border-radius: 0.5rem;
+        padding: 2rem 0;
+        width: 100%;
+        background-color: $green;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1;
+        text-align: center;
+        text-decoration: none;
+        color: $white;
+        &:hover {
+            box-shadow: 0 0 3rem rgba($green, 0.7);
+            background-color: darken($green, 10%);
+            text-decoration: none;
+            color: darken($white, 5%);
+        }
+    }
+    &__timer {
+        position: absolute;
+        bottom: -8.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 2rem 5rem rgba(#000, 0.2);
+        border-radius: 1rem;
+        width: 47rem;
+        height: 17rem;
+        padding: 3.5rem 3rem 2.5rem 3rem;
+        background-color: $white;
+        &-title {
+            padding-bottom: 1.5rem;
+            font-weight: 700;
+            font-size: 2.1rem;
+            line-height: 1;
+            text-align: center;
+            color: $grey-dark;
+            span {
+                font-weight: 900;
+                color: $green;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+    }
+}

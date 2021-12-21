@@ -1,0 +1,31 @@
+.arrow {
+    padding: 0;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+
+    position: absolute;
+    top: 45%;
+    z-index: 2;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &--prev {
+        left: 2rem;
+        transform: rotate(180deg);
+    }
+
+    &--next {
+        right: 2rem;
+    }
+}
+
+.arrow-icon {
+    width: 3rem;
+    height: 6rem;
+
+    fill: $green;
+}

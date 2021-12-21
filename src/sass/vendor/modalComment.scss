@@ -1,0 +1,427 @@
+$modalComment-title-color: #111;
+$modalComment-subtitle-color: #333;
+
+$modalComment-border-radius: 0.5rem;
+
+// NUMBER
+$modalComment-number-color: #222;
+$modalComment-number-color--hover: #319511;
+
+
+// INPUT
+
+/* BOX SHADOW */
+$modalComment-input-box-shadow: 0 0 0.5rem rgba(#fff, 0);
+$modalComment-input-box-shadow--hover: 0 0 0.5rem darken(#319511, 10%);
+
+/* BORDER */
+$modalComment-input-border: 2px solid #319511;
+$modalComment-input-border--hover: 2px solid darken(#319511, 5%);
+
+/* BACKGROUND COLOR */
+$modalComment-input-background-color : transparent;
+$modalComment-input-background-color--hover : rgba(darken(#319511, 5%), 0.05);
+
+/* COLOR */
+$modalComment-input-color: #319511;
+
+/* PLACEHOLDER COLOR */
+$modalComment-input-placeholder-color: #222;
+$modalComment-input-placeholder-color--hover: darken(#319511, 5%);
+
+
+// TEXTAREA
+
+/* BOX SHADOW */
+$modalComment-textarea-box-shadow: 0 0 0.5rem rgba(#fff, 0);
+$modalComment-textarea-box-shadow--hover: 0 0 0.5rem darken(#319511, 10%);
+
+/* BORDER */
+$modalComment-textarea-border: 2px solid #319511;
+$modalComment-textarea-border--hover: 2px solid darken(#319511, 5%);
+
+/* BACKGROUND COLOR */
+$modalComment-textarea-background-color : transparent;
+$modalComment-textarea-background-color--hover : rgba(darken(#319511, 5%), 0.05);
+
+/* COLOR */
+$modalComment-textarea-color: #319511;
+
+/* PLACEHOLDER COLOR */
+$modalComment-textarea-placeholder-color: #222;
+$modalComment-textarea-placeholder-color--hover: darken(#319511, 5%);
+
+
+// FILE
+
+/* BOX SHADOW */
+$modalComment-file-box-shadow: 0 0 0.5rem rgba(#fff, 0);
+;
+$modalComment-file-box-shadow--hover: 0 0 0.5rem darken(#477082, 5%);
+
+/* BORDER */
+$modalComment-file-border: 2px solid #477082;
+$modalComment-file-border--hover: 2px solid darken(#477082, 10%);
+
+/* BACKGROUND COLOR */
+$modalComment-file-background-color: #477082;
+$modalComment-file-background-color--hover: darken(#477082, 10%);
+
+/* COLOR */
+$modalComment-file-color: #fff;
+$modalComment-file-color--hover: #fff;
+
+
+// RATING
+$modalComment-rating-icon-color-checked: #FF9E45;
+$modalComment-rating-icon-color-unchecked: rgba(#66BB6A, 0.3);
+$modalComment-rating-icon-color-hover: #FF9E45;
+
+
+// BUTTON
+
+/* BOX SHADOW */
+$modalComment-btn-box-shadow: 0 0 0.5rem rgba(#fff, 0);
+$modalComment-btn-box-shadow--hover: 0 0 0.5rem darken(#66BB6A, 10%);
+
+/* BORDER */
+$modalComment-btn-border: 2px solid #66BB6A;
+$modalComment-btn-border--hover: 2px solid darken(#66BB6A, 5%);
+
+/* BACKGROUND COLOR */
+$modalComment-btn-background-color : #66BB6A;
+$modalComment-btn-background-color--hover : darken(#66BB6A, 5%);
+
+/* COLOR */
+$modalComment-btn-color: #fff;
+$modalComment-btn-color--hover: darken(#fff, 5%);
+
+
+
+
+.modalComment {
+    min-width: 40rem;
+    padding: 5rem !important;
+
+    background-color: rgba(#000, 0.7);
+
+    &__content {
+        padding: 2rem;
+
+        animation: modalPulseAnimation 2s linear infinite;
+
+        box-shadow: 0 0 3.5rem darken(#fff, 40%);
+        border: 0;
+        border-radius: $modalComment-border-radius;
+
+        background-color: darken(#fff, 10%);
+    }
+
+    &__btn-close {
+        position: absolute;
+        top: -4rem;
+        right: -4rem;
+        z-index: 1;
+
+        display: block;
+
+        width: 3rem;
+        height: 3rem;
+        padding: 0;
+
+        border: 0;
+
+        background-color: transparent;
+
+        svg {
+            transition: fill 0.2s linear;
+
+            width: 100%;
+            height: 100%;
+
+            fill: rgba(#fff, 0.5);
+        }
+
+        &:hover {
+            animation: modalCloseAnimation 0.4s;
+
+            svg {
+                fill: rgba(#ff0000, 0.6);
+            }
+        }
+    }
+
+    &__title {
+        padding: 1rem 0;
+
+        font-weight: 800;
+        font-size: 3.4rem;
+        line-height: 1;
+        text-align: center;
+        text-shadow: 0 0 1rem rbga($modalComment-title-color, 0.15);
+        color: $modalComment-title-color;
+    }
+
+    &__subtitle {
+        padding-bottom: 1rem;
+
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 1.1;
+        text-align: center;
+        text-shadow: 0 0 1rem rbga($modalComment-subtitle-color, 0.15);
+        color: $modalComment-subtitle-color;
+    }
+
+    &__links {
+        flex-direction: column;
+        align-items: center;
+
+        display: flex;
+
+        padding: 0.5rem;
+    }
+
+    &__item {
+        display: flex;
+
+        padding: 0.5rem 0;
+
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+
+            .modalComment__item-number {
+                text-decoration: none;
+                text-shadow: 0 0 0.1rem darken($modalComment-number-color--hover, 10%);
+                color: $modalComment-number-color--hover;
+            }
+        }
+    }
+
+    &__item-image {
+        margin-right: 1rem;
+        width: 2.2rem;
+        height: 2.2rem;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__item-number {
+        transition: color 0.2s linear, text-shadow 0.2s linear;
+
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 1;
+        text-decoration: none;
+        text-shadow: 0 0 0.1rem rgba($modalComment-number-color, 0.15);
+        color: $modalComment-number-color;
+    }
+
+    &__body {
+        padding: 2rem 0 1rem;
+    }
+
+    &__form {
+        flex-direction: column;
+        align-items: center;
+
+        display: flex;
+
+        padding: 0.5rem 2rem;
+    }
+
+    &__input {
+        display: block;
+
+        transition: box-shadow 0.2s linear, border-color 0.2s linear, background-color 0.2s linear, color 0.2s linear;
+
+        margin: 0.5rem 0;
+        box-shadow: $modalComment-input-box-shadow;
+        border: $modalComment-input-border;
+        border-radius: $modalComment-border-radius;
+        width: 100%;
+        padding: 1rem;
+
+        background-color: $modalComment-input-background-color;
+
+        font-family: inherit;
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: $modalComment-input-color;
+
+        &::placeholder {
+            transition: color 0.2s linear;
+
+            color: $modalComment-input-placeholder-color;
+        }
+
+        &:hover {
+            box-shadow: $modalComment-input-box-shadow--hover;
+            border: $modalComment-input-border--hover;
+
+
+            background-color: $modalComment-input-background-color--hover;
+
+            &::placeholder {
+                color: $modalComment-input-placeholder-color--hover;
+            }
+        }
+    }
+
+    &__textarea {
+        transition: box-shadow 0.2s linear, border-color 0.2s linear, background-color 0.2s linear, color 0.2s linear;
+
+        display: block;
+
+        margin: 0.5rem 0;
+        box-shadow: $modalComment-textarea-box-shadow;
+        border: $modalComment-textarea-border;
+        border-radius: $modalComment-border-radius;
+        width: 100%;
+        min-height: 10rem;
+        padding: 1rem;
+
+        background-color: $modalComment-textarea-background-color;
+
+        font-family: inherit;
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: $modalComment-textarea-color;
+
+        &::placeholder {
+            transition: color 0.2s linear;
+
+            color: $modalComment-textarea-placeholder-color;
+        }
+
+        &:hover {
+            box-shadow: $modalComment-textarea-box-shadow--hover;
+            border: $modalComment-textarea-border--hover;
+
+
+            background-color: $modalComment-textarea-background-color--hover;
+
+            &::placeholder {
+                color: $modalComment-textarea-placeholder-color--hover;
+            }
+        }
+    }
+
+    &__file {
+        transition: border-color 0.2s linear, box-shadow 0.2s linear, background-color 0.2s linear;
+
+        display: block;
+
+        margin: 1rem 0 0;
+        box-shadow: $modalComment-file-box-shadow;
+        border: $modalComment-file-border;
+        border-radius: $modalComment-border-radius;
+        padding: 1rem 5rem;
+
+        background-color: $modalComment-file-background-color;
+
+        font-family: inherit;
+        font-size: 2.2rem;
+        font-weight: 500;
+        text-align: center;
+        color: $modalComment-file-color;
+
+
+        &:hover {
+            box-shadow: $modalComment-file-box-shadow--hover;
+            border: $modalComment-file-border--hover;
+
+            background-color: $modalComment-file-background-color--hover;
+
+            color: $modalComment-file-color--hover;
+        }
+
+        & input {
+            display: none;
+        }
+
+        & i {
+            padding-right: 0.5rem;
+
+            font-size: 2rem;
+        }
+    }
+
+    &__rating {
+        padding: 1rem;
+        display: inline-flex;
+
+        &-icon {
+            pointer-events: none;
+        }
+
+        &-input {
+            position: absolute !important;
+            left: -9999px !important;
+
+            &--none {
+                display: none;
+
+            }
+        }
+
+        &-label {
+            cursor: pointer;
+            padding: 0 0.2em;
+            font-size: 3rem;
+        }
+
+        &-icon--star {
+            color: $modalComment-rating-icon-color-checked;
+
+            transition: color 0.2s linear;
+        }
+
+        &-input:checked~&-label &-icon--star {
+            color: $modalComment-rating-icon-color-unchecked;
+        }
+
+        &:hover &-label &-icon--star {
+            color: $modalComment-rating-icon-color-hover;
+        }
+
+        &-input:hover~&-label &-icon--star {
+            color: $modalComment-rating-icon-color-unchecked;
+        }
+    }
+
+    &__btn {
+        transition: box-shadow 0.2s linear, border-color 0.2s linear, background-color 0.2s linear, color 0.2s linear;
+
+        display: block;
+
+        margin-top: 1rem;
+        box-shadow: $modalComment-btn-box-shadow;
+        border: $modalComment-btn-border;
+        border-radius: $modalComment-border-radius;
+        width: 100%;
+        padding: 1rem 2rem;
+
+        background-color: $modalComment-btn-background-color;
+
+        font-family: inherit;
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: $modalComment-btn-color;
+
+        &:hover {
+            color: $modalComment-btn-color--hover;
+
+            box-shadow: $modalComment-btn-box-shadow--hover;
+            border: $modalComment-btn-border--hover;
+
+            background-color: $modalComment-btn-background-color--hover;
+        }
+    }
+}

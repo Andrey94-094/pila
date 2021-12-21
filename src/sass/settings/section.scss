@@ -1,0 +1,36 @@
+.section {
+    &__title {
+        position: relative;
+
+        padding-bottom: 3rem;
+
+        font-weight: 800;
+        font-size: 3.7rem;
+        line-height: 1.1;
+        text-align: left;
+        text-transform: initial;
+        color: $grey-dark;
+
+        &::after {
+            content: "";
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+
+            width: 8rem;
+            height: 0.7rem;
+
+            background-color: $green;
+        }
+
+        &--white {
+            color: $white;
+
+            &::after {
+                background-color: $grey-dark;
+            }
+        }
+    }
+}

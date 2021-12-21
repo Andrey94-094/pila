@@ -1,0 +1,56 @@
+.technology {
+    background: #fff;
+    padding-bottom: 4rem;
+    &__title {
+        padding-top: 7rem;
+        font-size: 2.8rem;
+        line-height: 1.1;
+        color: #333;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__item {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        display: block;
+        width: 50%;
+        padding: 3rem;
+    }
+    &__bacgraund {
+        background: transparent;
+        border: 0px;
+    }
+}
+
+.description {
+    width: 49%;
+    padding: 3rem;
+    &__logo {
+        padding-bottom: 2rem;
+        width: 100%;
+        border-bottom: 2px solid #a7be39;
+    }
+    &__info {
+        padding: 2rem 0;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        border-bottom: 1px solid #a7be39;
+    }
+    &__title {
+        padding-left: 1rem;
+        width: 45%;
+        font-size: 2.4rem;
+        line-height: 1.1;
+        color: #333;
+        font-weight: 700;
+    }
+    &__subtitle {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+}

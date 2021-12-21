@@ -1,0 +1,75 @@
+.discounts {
+    padding: 10px 0 100px;
+    background: #fff;
+    &__title {
+        margin-bottom: 4rem;
+        text-align: center;
+        padding-top: 1rem;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+}
+
+.sale {
+    &__text_small {
+        color: #fff;
+        margin-bottom: 2rem;
+        font-size: 20px;
+        line-height: 1.5;
+        opacity: 0.7;
+    }
+    &__text_large {
+        color: #fff;
+        margin-bottom: 3rem;
+        font-size: 96px;
+        font-weight: 700;
+    }
+    &__text_regular {
+        color: #fff;
+        margin-bottom: 0;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}
+
+.sweet-price {
+    background-color: #eb5757;
+    position: relative;
+    height: 100%;
+    padding: 20px 60px;
+    border-radius: 1rem;
+}
+
+.sweet-price::after {
+    background-image: url(../../../public/img/sale/strawberry-img.webp);
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: -24px;
+    display: block;
+    width: 220px;
+    height: 230px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.couple {
+    background-color: #56ccf2;
+    position: relative;
+    height: 100%;
+    padding: 20px 60px;
+    border-radius: 1rem;
+}
+
+.couple::after {
+    background-image: url(../../../public/img/sale/cherry-img.webp);
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: -24px;
+    display: block;
+    width: 220px;
+    height: 230px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

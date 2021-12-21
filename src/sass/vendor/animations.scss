@@ -1,0 +1,31 @@
+@keyframes modalCloseAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(1rem);
+    }
+
+    50% {
+        transform: translateX(-1rem);
+    }
+
+    75% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes modalPulseAnimation {
+    0% {
+        box-shadow: 0 0 3.5rem darken(#fff, 40%);
+    }
+
+    50% {
+        box-shadow: 0 0 5.5rem darken(#fff, 30%);
+    }
+}

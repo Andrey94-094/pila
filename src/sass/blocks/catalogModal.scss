@@ -1,0 +1,206 @@
+.modalCatalog {
+    min-width: 40rem;
+    padding: 5rem !important;
+
+    background-color: rgba(#000, 0.7);
+
+    &__content {
+        animation: modalPulseAnimation 2s linear infinite;
+
+        box-shadow: 0 0 3.5rem darken(#fff, 40%);
+        border: 0;
+        border-radius: 0.5rem;
+
+        background-color: darken(#fff, 10%);
+    }
+
+    &__btn-close {
+        position: absolute;
+        top: -4rem;
+        right: -4rem;
+        z-index: 1;
+
+        display: block;
+
+        width: 3rem;
+        height: 3rem;
+        padding: 0;
+
+        border: 0;
+
+        background-color: transparent;
+
+        svg {
+            transition: fill 0.2s linear;
+
+            width: 100%;
+            height: 100%;
+
+            fill: rgba(#fff, 0.5);
+        }
+
+        &:hover {
+            animation: modalCloseAnimation 0.4s;
+
+            svg {
+                fill: rgba(#ff0000, 0.6);
+            }
+        }
+    }
+
+    &__header {
+        border-bottom: 2px solid #bbb;
+        padding: 2rem;
+    }
+
+    &__slider {
+        position: relative;
+
+        overflow: hidden;
+
+        border-radius: 1rem;
+    }
+
+    &__img {
+        width: 100%;
+
+        img {
+            display: block;
+
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__body {
+        border-bottom: 2px solid #bbb;
+        padding: 2rem;
+    }
+
+    &__title {
+        padding-bottom: 1rem;
+
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 1.1;
+        text-align: left;
+        color: $grey-dark;
+
+        span {
+            font-weight: 900;
+            color: $green;
+        }
+    }
+
+    &__info {
+        margin: 0;
+        padding: 0;
+
+        &-title {
+            list-style: none;
+            padding: 1rem 0;
+
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 1.1;
+            text-align: left;
+            color: $grey-dark;
+        }
+
+        &-text {
+            position: relative;
+
+            list-style: none;
+            padding: 0.5rem 0;
+            padding-left: 2.5rem;
+
+            font-weight: 500;
+            font-size: 1.7rem;
+            line-height: 1.1;
+            text-align: left;
+            color: $grey-dark;
+
+            i {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0.5rem;
+                z-index: 1;
+
+                font-size: 1.2rem;
+                color: $green;
+            }
+        }
+    }
+
+    &__footer {
+        padding: 2rem 4rem;
+    }
+
+    &__input {
+        display: block;
+
+        transition: box-shadow 0.2s linear, border-color 0.2s linear, background-color 0.2s linear, color 0.2s linear;
+
+        margin: 0.5rem 0;
+        box-shadow: 0 0 0.5rem rgba(#fff, 0);
+        border: 2px solid #66BB6A;
+        border-radius: 0.5rem;
+        width: 100%;
+        padding: 1rem;
+
+        background-color: transparent;
+
+        font-family: inherit;
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: #66BB6A;
+
+        &::placeholder {
+            transition: color 0.2s linear;
+
+            color: #222;
+        }
+
+        &:hover {
+            box-shadow: 0 0 0.5rem darken(#66BB6A, 10%);
+            border: 2px solid darken(#66BB6A, 5%);
+
+
+            background-color: rgba(darken(#66BB6A, 5%), 0.05);
+
+            &::placeholder {
+                color: darken(#66BB6A, 5%);
+            }
+        }
+    }
+
+    &__btn {
+        transition: box-shadow 0.2s linear, border-color 0.2s linear, background-color 0.2s linear, color 0.2s linear;
+
+        display: block;
+
+        margin-top: 1rem;
+        box-shadow: 0 0 0.5rem rgba(#fff, 0);
+        border: 2px solid #66BB6A;
+        border-radius: 0.5rem;
+        width: 100%;
+        padding: 1rem 2rem;
+
+        background-color: #66BB6A;
+
+        font-family: inherit;
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: #fff;
+
+        &:hover {
+            box-shadow: 0 0 0.5rem darken(#66BB6A, 10%);
+            border: 2px solid darken(#66BB6A, 5%);
+
+            background-color: darken(#66BB6A, 5%);
+
+            color: darken(#fff, 5%);
+        }
+    }
+}

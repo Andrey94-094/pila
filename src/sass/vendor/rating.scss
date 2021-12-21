@@ -1,0 +1,41 @@
+.rating-group {
+    padding: 1rem;
+    display: inline-flex;
+}
+
+.rating__icon {
+    pointer-events: none;
+}
+
+.rating__input {
+    position: absolute !important;
+    left: -9999px !important;
+}
+
+.rating__input--none {
+    display: none;
+}
+
+.rating__label {
+    cursor: pointer;
+    padding: 0 0.2em;
+    font-size: 3rem;
+}
+
+.rating__icon--star {
+    color: $yellow;
+
+    transition: color 0.2s linear;
+}
+
+.rating__input:checked~.rating__label .rating__icon--star {
+    color: rgba($green, 0.3);
+}
+
+.rating-group:hover .rating__label .rating__icon--star {
+    color: $yellow;
+}
+
+.rating__input:hover~.rating__label .rating__icon--star {
+    color: rgba($green, 0.3);
+}

@@ -1,0 +1,257 @@
+$modalOrder-title-color: #111;
+$modalOrder-subtitle-color: #333;
+
+$modalOrder-border-radius: 0.5rem;
+
+// NUMBER
+$modalOrder-number-color: #222;
+$modalOrder-number-color--hover: #66BB6A;
+
+
+// INPUT
+
+/* BOX SHADOW */
+$modalOrder-input-box-shadow: 0 0 0.5rem rgba(#fff, 0);
+$modalOrder-input-box-shadow--hover: 0 0 0.5rem darken(#66BB6A, 10%);
+
+/* BORDER */
+$modalOrder-input-border: 2px solid #66BB6A;
+$modalOrder-input-border--hover: 2px solid darken(#66BB6A, 5%);
+
+/* BACKGROUND COLOR */
+$modalOrder-input-background-color : transparent;
+$modalOrder-input-background-color--hover : rgba(darken(#66BB6A, 5%), 0.05);
+
+/* COLOR */
+$modalOrder-input-color: #66BB6A;
+
+/* PLACEHOLDER COLOR */
+$modalOrder-input-placeholder-color: #222;
+$modalOrder-input-placeholder-color--hover: darken(#66BB6A, 5%);
+
+
+// BUTTON
+
+/* BOX SHADOW */
+$modalOrder-btn-box-shadow: 0 0 0.5rem rgba(#fff, 0);
+$modalOrder-btn-box-shadow--hover: 0 0 0.5rem darken(#66BB6A, 10%);
+
+/* BORDER */
+$modalOrder-btn-border: 2px solid #66BB6A;
+$modalOrder-btn-border--hover: 2px solid darken(#66BB6A, 5%);
+
+/* BACKGROUND COLOR */
+$modalOrder-btn-background-color : #66BB6A;
+$modalOrder-btn-background-color--hover : darken(#66BB6A, 5%);
+
+/* COLOR */
+$modalOrder-btn-color: #fff;
+$modalOrder-btn-color--hover: darken(#fff, 5%);
+
+
+
+
+.modalOrder {
+    min-width: 40rem;
+    padding: 5rem !important;
+
+    background-color: rgba(#000, 0.7);
+
+    &__content {
+        padding: 2rem;
+
+        animation: modalPulseAnimation 2s linear infinite;
+
+        box-shadow: 0 0 3.5rem darken(#fff, 40%);
+        border: 0;
+        border-radius: $modalOrder-border-radius;
+
+        background-color: darken(#fff, 10%);
+    }
+
+    &__btn-close {
+        position: absolute;
+        top: -4rem;
+        right: -4rem;
+        z-index: 1;
+
+        display: block;
+
+        width: 3rem;
+        height: 3rem;
+        padding: 0;
+
+        border: 0;
+
+        background-color: transparent;
+
+        svg {
+            transition: fill 0.2s linear;
+
+            width: 100%;
+            height: 100%;
+
+            fill: rgba(#fff, 0.5);
+        }
+
+        &:hover {
+            animation: modalCloseAnimation 0.4s;
+
+            svg {
+                fill: rgba(#ff0000, 0.6);
+            }
+        }
+    }
+
+    &__title {
+        padding: 1rem 0;
+
+        font-weight: 800;
+        font-size: 3.4rem;
+        line-height: 1;
+        text-align: center;
+        text-shadow: 0 0 1rem rbga($modalOrder-title-color, 0.15);
+        color: $modalOrder-title-color;
+    }
+
+    &__subtitle {
+        padding-bottom: 1rem;
+
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 1.1;
+        text-align: center;
+        text-shadow: 0 0 1rem rbga($modalOrder-subtitle-color, 0.15);
+        color: $modalOrder-subtitle-color;
+    }
+
+    &__links {
+        flex-direction: column;
+        align-items: center;
+
+        display: flex;
+
+        padding: 0.5rem;
+    }
+
+    &__item {
+        display: flex;
+
+        padding: 0.5rem 0;
+
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+
+            .modalOrder__item-number {
+                text-decoration: none;
+                text-shadow: 0 0 0.1rem darken($modalOrder-number-color--hover, 10%);
+                color: $modalOrder-number-color--hover;
+            }
+        }
+    }
+
+    &__item-image {
+        margin-right: 1rem;
+        width: 2.2rem;
+        height: 2.2rem;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__item-number {
+        transition: color 0.2s linear, text-shadow 0.2s linear;
+
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 1;
+        text-decoration: none;
+        text-shadow: 0 0 0.1rem rgba($modalOrder-number-color, 0.15);
+        color: $modalOrder-number-color;
+    }
+
+    &__body {
+        padding: 2rem 0 1rem;
+    }
+
+    &__form {
+        flex-direction: column;
+        align-items: center;
+
+        display: flex;
+
+        padding: 0.5rem 2rem;
+    }
+
+    &__input {
+        display: block;
+
+        transition: box-shadow 0.2s linear, border-color 0.2s linear, background-color 0.2s linear, color 0.2s linear;
+
+        margin: 0.5rem 0;
+        box-shadow: $modalOrder-input-box-shadow;
+        border: $modalOrder-input-border;
+        border-radius: $modalOrder-border-radius;
+        width: 100%;
+        padding: 1rem;
+
+        background-color: $modalOrder-input-background-color;
+
+        font-family: inherit;
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: $modalOrder-input-color;
+
+        &::placeholder {
+            transition: color 0.2s linear;
+
+            color: $modalOrder-input-placeholder-color;
+        }
+
+        &:hover {
+            box-shadow: $modalOrder-input-box-shadow--hover;
+            border: $modalOrder-input-border--hover;
+
+
+            background-color: $modalOrder-input-background-color--hover;
+
+            &::placeholder {
+                color: $modalOrder-input-placeholder-color--hover;
+            }
+        }
+    }
+
+    &__btn {
+        transition: box-shadow 0.2s linear, border-color 0.2s linear, background-color 0.2s linear, color 0.2s linear;
+
+        display: block;
+
+        margin-top: 1rem;
+        box-shadow: $modalOrder-btn-box-shadow;
+        border: $modalOrder-btn-border;
+        border-radius: $modalOrder-border-radius;
+        width: 100%;
+        padding: 1rem 2rem;
+
+        background-color: $modalOrder-btn-background-color;
+
+        font-family: inherit;
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: $modalOrder-btn-color;
+
+        &:hover {
+            color: $modalOrder-btn-color--hover;
+
+            box-shadow: $modalOrder-btn-box-shadow--hover;
+            border: $modalOrder-btn-border--hover;
+
+            background-color: $modalOrder-btn-background-color--hover;
+        }
+    }
+}

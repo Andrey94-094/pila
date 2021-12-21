@@ -1,0 +1,156 @@
+.footer {
+    padding: 5rem 2rem 5rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../public/img/footer/bg.jpg');
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 8rem 2rem;
+        border-radius: 1rem;
+        background-color: rgba($white, 0.6);
+    }
+    &__title {
+        margin-bottom: 5rem;
+        font-weight: 800;
+        font-size: 3.4rem;
+        line-height: 1.1;
+        text-align: center;
+        color: $grey-dark;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__input {
+        position: relative;
+        margin-bottom: 1rem;
+        width: 40rem;
+        input {
+            display: block;
+            transition: border-color 0.2s linear;
+            border: 2px solid rgba(#000, 0.6);
+            border-radius: 0.5rem;
+            width: 100%;
+            padding: 1.5rem 0.5rem 1.5rem 4rem;
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 1;
+            color: $green;
+            &::placeholder {
+                transition: color 0.2s linear;
+                font-weight: 500;
+                color: rgba(#000, 0.6);
+            }
+        }
+        i {
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            left: 1.25rem;
+            z-index: 1;
+            transition: color 0.2s linear;
+            font-size: 2rem;
+            color: rgba(#000, 0.6);
+        }
+        &:hover {
+            input {
+                border-color: rgba($green, 0.7);
+                &::placeholder {
+                    color: rgba($green, 0.9);
+                }
+            }
+            i {
+                color: rgba($green, 0.7);
+            }
+        }
+        @media (max-width: 425px) {
+            width: 100%;
+        }
+    }
+    &__btn {
+        transition: box-shadow 0.2s linear, background-color 0.2s linear, color 0.2s linear;
+        border-radius: 0.5rem;
+        border: 0;
+        width: 40rem;
+        padding: 1.7rem 0;
+        background-color: $green;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1;
+        text-align: center;
+        text-decoration: none;
+        color: $white;
+        &:hover {
+            box-shadow: 0 0 3rem rgba($green, 0.7);
+            background-color: darken($green, 10%);
+            text-decoration: none;
+            color: darken($white, 5%);
+        }
+        @media (max-width: 425px) {
+            width: 100%;
+        }
+    }
+    &__address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1.1;
+        text-align: center;
+        color: $grey-dark;
+        span {
+            margin-top: 2rem;
+        }
+    }
+    &__phones {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 5rem;
+        width: 100%;
+        @media (max-width: 650px) {
+            flex-direction: column;
+            margin-top: 3rem;
+        }
+    }
+    &__link {
+        transition: box-shadow 0.2s linear, background-color 0.2s linear, transform 0.3s linear;
+        display: flex;
+        align-items: center;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        background-color: $green;
+        img {
+            display: block;
+            width: 3rem;
+            height: 3rem;
+        }
+        span {
+            transition: color 0.2s linear;
+            margin-left: 1.5rem;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 1;
+            color: $white;
+        }
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 3rem rgba($green, 0.7);
+            background-color: darken($green, 10%);
+            text-decoration: none;
+            span {
+                color: darken($white, 5%);
+            }
+        }
+        @media (max-width: 650px) {
+            margin: 1rem 0;
+        }
+    }
+}

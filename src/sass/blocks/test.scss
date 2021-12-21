@@ -1,0 +1,201 @@
+.test {
+    padding: 10rem 0 20rem;
+    background-image: url("../../../public/img/test/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.test__subtitle {
+    padding: 6rem 0 1rem;
+    color: rgba($grey-dark, 0.9);
+    line-height: 1.1;
+    font-weight: 700;
+    font-size: 3rem;
+    &-ligtht {
+        color: rgba($grey-dark, 0.6);
+        font-weight: 400;
+    }
+}
+
+.test__inner {
+    width: 40rem;
+    margin: 0 auto;
+    padding: 4rem 3rem;
+    background-color: $white;
+    border-radius: 1rem;
+    box-shadow: 0 0 3rem rgba($black, 0.5);
+}
+
+.test__item {
+    min-height: 36rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.test__header {
+    position: relative;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    color: $grey-dark;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 2rem;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        width: 7rem;
+        height: 0.4rem;
+        background-color: $green;
+        border-radius: 1px;
+    }
+}
+
+.test__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+}
+
+.test__error {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    color: $red;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 1.4rem;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.test__label {
+    position: relative;
+    display: flex;
+    padding: 1rem 0;
+    & input {
+        display: none;
+    }
+    & input:checked+.test__label-icon {
+        color: rgba($red, .9);
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        z-index: 1;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: .2rem solid rgba($grey-dark, 0.7);
+        border-radius: .2rem;
+    }
+    &:hover {
+        .test__label-icon {
+            color: rgba($red, .3);
+        }
+    }
+}
+
+.test__label-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: .2rem;
+    z-index: 2;
+    margin-top: -0.5rem;
+    color: transparent;
+    font-size: 3.2rem;
+    transition: color .2s linear;
+}
+
+.test__label-text {
+    padding-left: 4rem;
+    color: $grey-dark;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.test__footer {
+    position: relative;
+    width: 100%;
+}
+
+.test__btn {
+    display: block;
+    transition: box-shadow 0.2s linear, background-color 0.2s linear, color 0.2s linear;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 2rem 0;
+    width: 100%;
+    background-color: $green;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    color: $white;
+    &:hover {
+        box-shadow: 0 0 3rem rgba($green, 0.7);
+        background-color: darken($green, 10%);
+        text-decoration: none;
+        color: darken($white, 5%);
+    }
+}
+
+.test__input {
+    position: relative;
+    margin: 1.5rem 0;
+    input {
+        display: block;
+        transition: border-color 0.2s linear;
+        border: 2px solid rgba(#000, 0.2);
+        border-radius: 0.5rem;
+        width: 100%;
+        padding: 1.5rem 0.5rem 1.5rem 4rem;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1;
+        color: $green;
+        &::placeholder {
+            transition: color 0.2s linear;
+            font-weight: 500;
+            color: #757575;
+        }
+    }
+    i {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 1.25rem;
+        z-index: 1;
+        transition: color 0.2s linear;
+        font-size: 2rem;
+        color: rgba(#000, 0.4);
+    }
+    &:hover {
+        input {
+            border-color: rgba($green, 0.7);
+            &::placeholder {
+                color: rgba($green, 0.9);
+            }
+        }
+        i {
+            color: rgba($green, 0.7);
+        }
+    }
+}

@@ -1,0 +1,101 @@
+@import "~normalize.css";
+@import "~bootstrap/scss/bootstrap";
+
+@import "./vars";
+@import "./dependencies/settings";
+@import "./dependencies/vendor";
+@import "./dependencies/blocks";
+
+/* .className__element---modificator */
+/* SASS INHERITANCE */
+// @extend
+// @mixin
+
+
+/* GENERATED CONTENT */
+// content: "";
+
+
+/* POSITION AND LAYOUT */
+// position: ;
+// top: ;
+// right: ;
+// bottom: ;
+// left: ;
+// z-index: ;
+
+
+/* DISPLAY AND VISIBILITY */
+// display: ;
+// opacity: ;
+// transform: ;
+
+
+/* FLEXBOX PROPERTIES */
+// flex-direction: ;
+// flex-wrap: ;
+// flex-flow: ;
+// justify-content: ;
+// align-items: ;
+// align-content: ;
+// order: ;
+// align-self: ;
+// flex-grow: ;
+// flex-shrink: ;
+// flex-basis: ;
+// flex: ;
+
+
+/* CLIPPING */
+// overflow: ;
+// clip: ;
+
+
+/* ANIMATION */
+// animation: ;
+// transition: ;
+
+
+/* BOX MODEL */
+// margin: top right bottom left;
+// box-shadow: ;
+// border: ;
+// border-radius: topLeft topRight bottomRight bottomLeft;
+// box-sizing: ;
+// width: ;
+// height: ;
+// padding: top right bottom left;
+
+
+/* BACKGROUND */
+// background-color: ;
+// background-position: ;
+// background-size: ;
+// background-repeat: ;
+// background-clip: ;
+// background-origin: ;
+// background-attachment: ;
+// background-image: ;
+// cursor: ;
+
+
+/* TYPOGRAPHY */
+// font-family: ;
+// font-style: ;
+// font-weight: ;
+// font-size: ;
+// line-height: ;
+// text-align: ;
+// text-transform: ;
+// word-spacing: ;
+// color: ;
+
+
+/* PSEUDO-CLASSES & PSEUDO-ELEMENTS */
+// :hover
+// :focus
+// :active
+// :before
+// :after
+// :first-child
+// :last-child

@@ -1,0 +1,62 @@
+.lightcountdown {
+    display: flex;
+    justify-content: center;
+}
+
+.lightcountdown__delimeter {
+    position: relative;
+    margin-left: 1.7rem;
+    padding-right: 1.7rem;
+
+    &::before,
+    &::after {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        z-index: 1;
+
+        border-radius: 50%;
+        width: 0.7rem;
+        height: 0.7rem;
+
+        background-color: $green;
+
+    }
+
+    &::before {
+        top: 23%;
+    }
+
+    &::after {
+        bottom: 49%;
+    }
+}
+
+.lightcountdown__digits {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+
+    text-align: center;
+    line-height: 1;
+}
+
+.lightcountdown__digit {
+    font-size: 5rem;
+    line-height: 1;
+    color: $green;
+    font-weight: 800;
+}
+
+.lightcountdown__text {
+    width: 100%;
+    padding-top: 0.4rem;
+
+    color: rgba($grey-dark, 0.6);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: lowercase;
+    text-align: center;
+}

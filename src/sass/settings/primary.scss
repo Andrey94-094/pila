@@ -1,0 +1,51 @@
+html {
+    font-size: 10px;
+
+    transition: font-size 0.3s linear, padding 0.3s linear;
+
+    @media (max-width: 1024px) {
+        font-size: 9px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 8px;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 7px;
+    }
+
+    @media (max-width: 320px) {
+        font-size: 6px;
+    }
+}
+
+body {
+    background-color: darken(#fff, 10%);
+
+    color: #2e2e2e;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.overflow {
+    overflow: hidden;
+}

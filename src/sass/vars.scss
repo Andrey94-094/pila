@@ -1,0 +1,15 @@
+$white: #fff;
+$black: #333;
+$green: #66BB6A;
+$orange: #f27200;
+$yellow: #FF9E45;
+$purple: #9f24a3;
+$pink: #f0c8d1;
+$red: #d73141;
+$grey: #ccc;
+
+$grey-dark: #2e2e2e;
+$white-dark: darken(#fff, 10%);
+
+$green-gradient: linear-gradient($green, darken($green, 10%));
+$radius-sm: 0.5rem;

@@ -1,0 +1,326 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    box-shadow: 0 0 4rem rgba(#000, 0.2);
+
+    &.scroll {
+        .header__contacts {
+            padding: 0.5rem 0;
+        }
+
+        .header__content {
+            padding: 1rem 0;
+        }
+
+    }
+
+    &__contacts {
+        transition: padding 0.2s linear;
+
+        padding: 1.5rem 0;
+
+        background-color: #F3F6F9;
+
+        &-inner {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        &-item {
+            position: relative;
+
+            display: flex;
+
+            align-items: center;
+
+            padding: 0.3rem 0.5rem;
+
+            &::after {
+                content: "";
+
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 1;
+
+                width: 0.2rem;
+                height: 100%;
+
+                background-color: #ccc;
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
+        &-tel {
+            display: block;
+
+            transition: color 0.2s linear, transform 0.2s linear;
+
+            padding-right: 0.5rem;
+
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 1;
+            text-decoration: none;
+            color: $grey-dark;
+
+            &:hover {
+                transform: scale(1.03);
+
+                text-decoration: none;
+                color: darken($green, 20%);
+            }
+        }
+
+        &-city {
+            display: block;
+
+            transition: color 0.2s linear;
+
+            font-weight: 700;
+            font-size: 1.25rem;
+            line-height: 1;
+            text-decoration: none;
+            color: $green;
+
+            &:hover {
+                transform: scale(1.03);
+
+                text-decoration: none;
+                color: darken($green, 20%);
+            }
+        }
+
+        @media (max-width: 900px) {
+            display: none;
+        }
+    }
+
+    &__content {
+        transition: padding 0.2s linear;
+
+        padding: 2.5rem 0;
+
+        background-color: $white;
+
+        &-inner {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @media (max-width: 900px) {
+            padding: 1rem 0;
+        }
+    }
+
+    &__logo {
+        order: 1;
+        transition: transform 0.2s linear;
+
+        width: 22.5rem;
+
+        img {
+            display: block;
+
+            width: 100%;
+            height: auto;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &.scroll {
+            display: none;
+        }
+
+        @media (max-width: 900px) {
+            display: none;
+        }
+
+        &--mobile {
+            display: none;
+
+            order: 2;
+
+            @media (max-width: 900px) {
+                display: block;
+            }
+        }
+
+        &--scroll {
+            order: 1;
+            display: none;
+
+            &.scroll {
+                display: block;
+            }
+
+            @media (max-width: 900px) {
+                display: none;
+            }
+        }
+    }
+
+    &__btn {
+        display: block;
+
+        order: 3;
+
+        transition: box-shadow 0.2s linear, background-color 0.2s linear, color 0.2s linear;
+
+        border-radius: 0.5rem;
+        padding: 1.5rem 0;
+        min-width: 19.5rem;
+
+        background-color: $green;
+
+        font-weight: 700;
+        font-size: 1.7rem;
+        line-height: 1;
+        text-align: center;
+        text-decoration: none;
+        color: $white;
+
+        i {
+            display: none;
+
+            font-size: 3rem;
+        }
+
+        &:hover {
+            box-shadow: 0 0 3rem rgba($green, 0.7);
+
+            background-color: darken($green, 10%);
+
+            text-decoration: none;
+            color: darken($white, 5%);
+        }
+
+        @media (max-width: 900px) {
+            order: 3;
+
+            min-width: auto;
+            padding: 1.2rem;
+
+            span {
+                display: none;
+            }
+
+            i {
+                display: block;
+            }
+        }
+    }
+
+    &__burger {
+        position: relative;
+
+        display: none;
+
+        transition: background-color 0.2s linear;
+
+        border: 0;
+        width: 4.5rem;
+        height: 3rem;
+
+        background-color: transparent;
+        cursor: pointer;
+
+        span {
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            left: 0;
+            z-index: 1;
+
+            transition: opacity 0.2s linear;
+
+            border-radius: 0.3rem;
+            width: 4.5rem;
+            height: 0.5rem;
+
+            background-color: #000;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+
+            position: absolute;
+            right: 0;
+            left: 0;
+            z-index: 1;
+
+            transition: transform 0.2s linear;
+
+            border-radius: 0.3rem;
+            width: 4.5rem;
+            height: 0.5rem;
+
+            background-color: #000;
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+
+        &.active {
+            span {
+                opacity: 0;
+            }
+
+            &::before {
+                width: 5.5rem;
+                transform: translate3d(-0.5rem, 1.25rem, 0) rotate(40deg);
+            }
+
+            &::after {
+                width: 5.5rem;
+                transform: translate3d(-0.5rem, -1.25rem, 0) rotate(-40deg);
+            }
+        }
+
+        @media (max-width: 900px) {
+            display: flex;
+
+            order: 1;
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 1;
+
+        display: none;
+
+        height: 100vh;
+
+        background-color: rgba(#000, 0.5);
+
+        &.active {
+            display: block;
+        }
+    }
+}
