@@ -1,0 +1,60 @@
+.c__section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: white;
+}
+
+.certificate {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    padding: 1rem;
+    font-weight: bold;
+    &__img {
+        text-decoration: none;
+        background-color: transparent;
+    }
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-btn-clouse:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+    cursor: pointer;
+    border: none;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: black;
+    height: 100px;
+    width: 50px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: fixed;
+    width: 5%;
+    background: inherit;
+}
+
+.certificate-modal {
+    background: inherit;
+    border: none;
+}
+
+.certificate-modal-header {
+    border: none
+}
+
+.modal-btn-clouse span {
+    position: fixed;
+    top: 20px;
+    right: 100px;
+    font-size: 6rem;
+}

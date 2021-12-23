@@ -8,6 +8,9 @@
         font-size: 3rem;
         font-weight: bold;
     }
+    @media (max-width:450px) {
+        padding: 10px 0 20px;
+    }
 }
 
 .sale {
@@ -23,6 +26,9 @@
         margin-bottom: 3rem;
         font-size: 96px;
         font-weight: 700;
+        @media (max-width: 450px) {
+            font-size: 34px;
+        }
     }
     &__text_regular {
         color: #fff;
@@ -72,4 +78,76 @@
     height: 230px;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media (max-width: 459px) {
+    .sweet-price::after,
+    .couple::after {
+        width: 171px;
+    }
+}
+
+@media (max-width: 1146px) {
+    .couple::after,
+    .sweet-price::after {
+        top: -78px;
+    }
+}
+
+@media (max-width: 450px) {
+    .couple,
+    .sweet-price {
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 459px) {
+    .sweet-price {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .sale .col-lg-7 {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 1146px) {
+    .couple::after,
+    .sweet-price::after {
+        top: -78px;
+    }
+}
+
+@media (max-width: 450px) {
+    .couple,
+    .sweet-price {
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 459px) {
+    .sweet-price {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:450px) {
+    .sale__row {
+        width: 110%;
+    }
+}
+
+@media (max-width:450px) {
+    .sweet-price::after {
+        height: 170px;
+        right: -78px;
+    }
+    .sale__text_small {
+        font-size: 10px;
+    }
+    .couple {
+        margin-top: 20px;
+    }
 }

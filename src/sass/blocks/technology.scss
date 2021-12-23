@@ -13,6 +13,9 @@
         padding-top: 2rem;
         display: flex;
         justify-content: space-between;
+        @media (max-width: 450px) {
+            display: block;
+        }
     }
     &__img {
         display: block;
@@ -22,6 +25,22 @@
     &__bacgraund {
         background: transparent;
         border: 0px;
+    }
+    &__img-item {
+        width: 100%;
+        height: auto;
+    }
+    &__item-title {
+        padding-left: 1rem;
+        width: 45%;
+        font-size: 2.4rem;
+        line-height: 1.1;
+        color: #333;
+        font-weight: 700;
+    }
+    &__description {
+        width: 49%;
+        padding: 3rem;
     }
 }
 
@@ -40,14 +59,6 @@
         -ms-flex-align: center;
         align-items: center;
         border-bottom: 1px solid #a7be39;
-    }
-    &__title {
-        padding-left: 1rem;
-        width: 45%;
-        font-size: 2.4rem;
-        line-height: 1.1;
-        color: #333;
-        font-weight: 700;
     }
     &__subtitle {
         font-size: 1.5rem;

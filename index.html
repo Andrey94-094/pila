@@ -1781,25 +1781,87 @@
             </div>
         </section>
 
-        <!--Discounts and promotions-->
+        <!-- Accessories -->
         <section class="section">
+            <div class="accessories" id="accessories">
+                <div class="container">
+                    <h2 class="section__title">
+                        Дополнительные комплектующие
+                    </h2>
+                    <div class="accessories__inner">
+                        <div class="accessories__item">
+                            <div class="accessories__item-img">
+                                <img src="./public/img/accessories/1.jpg" alt="">
+                            </div>
+                            <p class="accessories__item-title">
+                                Маска
+                            </p>
+                            <p class="accessories__item-price">
+                                11 руб.
+                            </p>
+                        </div>
+
+                        <div class="accessories__item">
+                            <div class="accessories__item-img">
+                                <img src="./public/img/accessories/2.png" alt="">
+                            </div>
+                            <p class="accessories__item-title">
+                                Масло
+                            </p>
+                            <p class="accessories__item-price">
+                                8 руб.
+                            </p>
+                        </div>
+
+                        <div class="accessories__item">
+                            <div class="accessories__item-img">
+                                <img src="./public/img/accessories/3.png" alt="">
+                            </div>
+                            <p class="accessories__item-title">
+                                Смазка
+                            </p>
+                            <p class="accessories__item-price">
+                                3 руб.
+                            </p>
+                        </div>
+
+                        <div class="accessories__item">
+                            <div class="accessories__item-img">
+                                <img src="./public/img/accessories/4.png" alt="">
+                            </div>
+                            <p class="accessories__item-title">
+                                Свеча
+                            </p>
+                            <p class="accessories__item-price">
+                                3 руб.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Discounts and promotions-->
+        <section class="section sale">
             <div class="discounts">
                 <div class="container">
-                    <div class="discounts__title">Скидки и акции</div>
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <div class="sweet-price">
-                                <p class="sale__text_small">Сладкая цена</p>
-                                <p class="sale__text_large">-50%</p>
-                                <p class="sale__text_regular">На все теплицы до конца месяца!</p>
-                                <p class="sale__text_regular">Не упусти свой шанс купить теплицу в два раза дешевле.</p>
+                    <h2 class="section__title"> Скидки и акции</h2>
+                    <div class="about">
+                        <div class="row sale__row">
+                            <div class="col-lg-5">
+                                <div class="sweet-price">
+                                    <p class="sale__text_small">Сладкая цена</p>
+                                    <p class="sale__text_large">-50%</p>
+                                    <p class="sale__text_regular">На все теплицы до конца месяца!</p>
+                                    <p class="sale__text_regular">Не упусти свой шанс купить теплицу в два раза дешевле.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="couple">
-                                <p class="sale__text_small">С соседом выгодней</p>
-                                <p class="sale__text_large">Парочка</p>
-                                <p class="sale__text_regular">Закажите с соседом две теплицы и получите скидку каждый! Акция работает по территории всей Беларуси.</p>
+                            <div class="col-lg-7">
+                                <div class="couple">
+                                    <p class="sale__text_small">С соседом выгодней</p>
+                                    <p class="sale__text_large">Парочка</p>
+                                    <p class="sale__text_regular">Закажите с соседом две теплицы и получите скидку каждый! Акция работает по территории всей Беларуси.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1811,17 +1873,17 @@
         <section class="section">
             <div class="technology">
                 <div class="container">
-                    <h2 class="technology__title">
+                    <h2 class="section__title">
                         Видеоотзывы от наших покупателей:
                     </h2>
                     <div class="technology__inner">
                         <div class="technology__item">
-                            <div class="description">
+                            <div class="technology__description">
                                 <div class="description__logo">
                                     <img src="./public/img/technology/logo.png" alt="">
                                 </div>
                                 <div class="description__info">
-                                    <div class="description__title">
+                                    <div class="technology__item-title">
                                         Имя:
                                     </div>
                                     <div class="description__subtitle">
@@ -1829,7 +1891,7 @@
                                     </div>
                                 </div>
                                 <div class="description__info">
-                                    <div class="description__title">
+                                    <div class="technology__item-title">
                                         Город:
                                     </div>
                                     <div class="description__subtitle">
@@ -1837,7 +1899,7 @@
                                     </div>
                                 </div>
                                 <div class="description__info">
-                                    <div class="description__title">
+                                    <div class="technology__item-title">
                                         Дата:
                                     </div>
                                     <div class="description__subtitle">
@@ -1845,24 +1907,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- description -->
-
                             <a class="technology__img" href="#" data-toggle="modal" data-target="#modal-review-video-1">
-                                <img src="./public/img/technology/1.png" alt="">
+                                <img class="technology__img-item" src="./public/img/technology/1.png" alt="">
                             </a>
                         </div>
 
                         <div class="technology__item">
                             <a class="technology__img" href="#" data-toggle="modal" data-target="#modal-review-video-2">
-                                <img src="./public/img/technology/2.png" alt="">
+                                <img class="technology__img-item" src="./public/img/technology/2.png" alt="">
                             </a>
 
-                            <div class="description">
+                            <div class="technology__description">
                                 <div class="description__logo">
                                     <img src="./public/img/technology/logo.png" alt="">
                                 </div>
                                 <div class="description__info">
-                                    <div class="description__title">
+                                    <div class="technology__item-title">
                                         Имя:
                                     </div>
                                     <div class="description__subtitle">
@@ -1870,7 +1930,7 @@
                                     </div>
                                 </div>
                                 <div class="description__info">
-                                    <div class="description__title">
+                                    <div class="technology__item-title">
                                         Город:
                                     </div>
                                     <div class="description__subtitle">
@@ -1878,7 +1938,7 @@
                                     </div>
                                 </div>
                                 <div class="description__info">
-                                    <div class="description__title">
+                                    <div class="technology__item-title">
                                         Дата:
                                     </div>
                                     <div class="description__subtitle">
@@ -1886,16 +1946,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- description -->
                         </div>
 
                         <div class="technology__item">
-                            <div class="description">
+                            <div class="technology__description">
                                 <div class="description__logo">
                                     <img src="./public/img/technology/logo.png" alt="">
                                 </div>
                                 <div class="description__info">
-                                    <div class="description__title">
+                                    <div class="technology__item-title">
                                         Имя:
                                     </div>
                                     <div class="description__subtitle">
@@ -1903,7 +1962,7 @@
                                     </div>
                                 </div>
                                 <div class="description__info">
-                                    <div class="description__title">
+                                    <div class="technology__item-title">
                                         Город:
                                     </div>
                                     <div class="description__subtitle">
@@ -1911,7 +1970,7 @@
                                     </div>
                                 </div>
                                 <div class="description__info">
-                                    <div class="description__title">
+                                    <div class="technology__item-title">
                                         Дата:
                                     </div>
                                     <div class="description__subtitle">
@@ -1919,24 +1978,21 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- description -->
-
                             <a class="technology__img" href="#" data-toggle="modal" data-target="#modal-review-video-3">
-                                <img src="./public/img/technology/1.png" alt="">
+                                <img class="technology__img-item" src="./public/img/technology/1.png" alt="">
                             </a>
                         </div>
 
                         <div class="technology__item">
                             <a class="technology__img" href="#" data-toggle="modal" data-target="#modal-review-video-4">
-                                <img src="./public/img/technology/2.png" alt="">
+                                <img class="technology__img-item" src="./public/img/technology/2.png" alt="">
                             </a>
-
-                            <div class="description">
+                            <div class="technology__description">
                                 <div class="description__logo">
                                     <img src="./public/img/technology/logo.png" alt="">
                                 </div>
                                 <div class="description__info">
-                                    <div class="description__title">
+                                    <div class="technology__item-title">
                                         Имя:
                                     </div>
                                     <div class="description__subtitle">
@@ -1944,7 +2000,7 @@
                                     </div>
                                 </div>
                                 <div class="description__info">
-                                    <div class="description__title">
+                                    <div class="technology__item-title">
                                         Город:
                                     </div>
                                     <div class="description__subtitle">
@@ -1952,7 +2008,7 @@
                                     </div>
                                 </div>
                                 <div class="description__info">
-                                    <div class="description__title">
+                                    <div class="technology__item-title">
                                         Дата:
                                     </div>
                                     <div class="description__subtitle">
@@ -1960,16 +2016,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- description -->
                         </div>
 
                         <div class="technology__item">
-                            <div class="description">
+                            <div class="technology__description">
                                 <div class="description__logo">
                                     <img src="./public/img/technology/logo.png" alt="">
                                 </div>
                                 <div class="description__info">
-                                    <div class="description__title">
+                                    <div class="technology__item-title">
                                         Имя:
                                     </div>
                                     <div class="description__subtitle">
@@ -1977,7 +2032,7 @@
                                     </div>
                                 </div>
                                 <div class="description__info">
-                                    <div class="description__title">
+                                    <div class="technology__item-title">
                                         Город:
                                     </div>
                                     <div class="description__subtitle">
@@ -1985,7 +2040,7 @@
                                     </div>
                                 </div>
                                 <div class="description__info">
-                                    <div class="description__title">
+                                    <div class="technology__item-title">
                                         Дата:
                                     </div>
                                     <div class="description__subtitle">
@@ -1993,10 +2048,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- description -->
 
                             <a class="technology__img" href="#" data-toggle="modal" data-target="#modal-review-video-5">
-                                <img src="./public/img/technology/1.png" alt="">
+                                <img class="technology__img-item" src="./public/img/technology/1.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -2108,17 +2162,18 @@
         <!-- Description -->
 
         <section class="description">
-            <header class="description__title">Преимущества поликарбонатных теплиц</header>
             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="d-flex justify-content-center ">
-                            <img src="./public/img/description/advantages_main.png" alt="equipment">
+                <h2 class="section__title">Преимущества поликарбонатных теплиц</h2>
+                <div class="about">
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-flex justify-content-center ">
+                                <img src="./public/img/description/advantages_main.png" alt="equipment">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="container-fluid orange-bg">
                 <div class="container ">
                     <div class="row">
@@ -2223,9 +2278,9 @@
 
         <!-- Production video -->
 
-        <section class="section  section--white">
-            <div class="container">
-                <h2 class="technology__title">
+        <section class="section  section--white ">
+            <div class="container ">
+                <h2 class="section__title">
                     Видео с производства:
                 </h2>
                 <div class="about">
@@ -2251,184 +2306,85 @@
             </div>
         </section>
 
-        <!-- Accessories -->
-        <section class="section">
-            <div class="accessories" id="accessories">
-                <div class="container">
-                    <h2 class="section__title">
-                        Дополнительные комплектующие
-                    </h2>
-                    <div class="accessories__inner">
-                        <div class="accessories__item">
-                            <div class="accessories__item-img">
-                                <img src="./public/img/accessories/1.jpg" alt="">
-                            </div>
-                            <p class="accessories__item-title">
-                                Маска
-                            </p>
-                            <p class="accessories__item-price">
-                                11 руб.
-                            </p>
+        <!--Certificates-->
+
+        <section id="section-certificates" class="c__section bg-black text-black">
+            <div class="certificate" data-animation="animated zoomInUp"></div>
+            <div class="container">
+                <h2 class="section__title">Сертификаты Качества</h2>
+                <div class="about">
+                    <div class="row">
+                        <div class="col-md-4 certificate__img">
+                            <a href="public/img/certificate/S1.jpg" data-toggle="modal" data-target="#exampleModal">
+                                <img src="public/img/certificate/S1.jpg" alt="certificate" class="img-fluid">
+                            </a>
                         </div>
 
-                        <div class="accessories__item">
-                            <div class="accessories__item-img">
-                                <img src="./public/img/accessories/2.png" alt="">
-                            </div>
-                            <p class="accessories__item-title">
-                                Масло
-                            </p>
-                            <p class="accessories__item-price">
-                                8 руб.
-                            </p>
+                        <div class="col-md-4">
+                            <a href="public/img/certificate/S2.jpg" data-toggle="modal" data-target="#exampleModal">
+                                <img src="public/img/certificate/S2.jpg" alt="certificate" class="img-fluid">
+                            </a>
                         </div>
 
-                        <div class="accessories__item">
-                            <div class="accessories__item-img">
-                                <img src="./public/img/accessories/3.png" alt="">
-                            </div>
-                            <p class="accessories__item-title">
-                                Смазка
-                            </p>
-                            <p class="accessories__item-price">
-                                3 руб.
-                            </p>
-                        </div>
-
-                        <div class="accessories__item">
-                            <div class="accessories__item-img">
-                                <img src="./public/img/accessories/4.png" alt="">
-                            </div>
-                            <p class="accessories__item-title">
-                                Свеча
-                            </p>
-                            <p class="accessories__item-price">
-                                3 руб.
-                            </p>
+                        <div class="col-md-4">
+                            <a href="public/img/certificate/S3.jpg" data-toggle="modal" data-target="#exampleModal">
+                                <img src="public/img/certificate/S3.jpg" alt="certificate" class="img-fluid">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <!-- Benefits -->
-        <section class="section">
-            <div class="benefits" id="benefits">
-                <div class="container">
-                    <h2 class="section__title">
-                        Устройство наших бензопил
-                    </h2>
-
-                    <div class="benefits__inner">
-                        <div class="benefits__item">
-                            <div class="benefits__item-title">
-                                Система очистки воздуха
+        <!-- Frequently asked questions -->
+        <section class="section section-questions">
+            <div class="container">
+                <div class="process" id="nav-2">
+                    <h2 class="section__title">Часто задаваемые вопросы</h2>
+                    <div class="about">
+                        <h4 class="process__subtitle">
+                            Наиболеее распространенные вопросы от наших покупателей
+                        </h4>
+                    </div>
+                    <div class="accordion" id="accordion">
+                        <div class="accordion__item">
+                            <div class="accordion__title collapsed" data-toggle="collapse" data-target="#accordion1" aria-controls="accordion1" aria-expanded="false">
+                                Какой шаг между дугами оптимальный?
                             </div>
-                            <div class="benefits__item-content">
-                                <div class="benefits__item-img">
-                                    <img src="./public/img/benefits/1.jpg" alt="">
-                                </div>
-                                <p class="benefits__item-text">
-                                    Центробежная система очистки воздуха для снижения износа и увеличения промежутков между чистками фильтра.
+                            <div class="accordion__content collapse" id="accordion1">
+                                <p>
+                                    Стандартным шагом считается 1 метр, в большинстве случаев с такой теплицей ничего не случится. Для более искушенных клиентов рекомендуем взять теплицу с шагом 0,67 метра, такая теплица выдержит даже самые суровые погодные условия в нашей стране. Ну, а
+                                    с шагом 0,5 метра теплица может выдержать катаклизм вселенского масштаба.
                                 </p>
                             </div>
                         </div>
-
-                        <div class="benefits__item">
-                            <div class="benefits__item-title">
-                                Антивибрационная система
+                        <div class="accordion__item">
+                            <div class="accordion__title" data-toggle="collapse" data-target="#accordion2" aria-expanded="false">
+                                За какое время я могу собрать теплицу?
                             </div>
-                            <div class="benefits__item-content">
-                                <div class="benefits__item-img">
-                                    <img src="./public/img/benefits/2.jpg" alt="">
-                                </div>
-                                <p class="benefits__item-text">
-                                    Эффективные антивибрационные элементы поглощают вибрацию, защищая от лишних колебаний.
+                            <div class="accordion__content  collapse" id="accordion2">
+                                <p>
+                                    Конструкция теплиц элементарная, для людей без опыта среднее время сборки теплицы 2 часа. Рекомендуем собирать теплицу минимум вдвоем. Чем больше людей учувствуют в этом деле, тем быстрее будет результат.
                                 </p>
                             </div>
                         </div>
-
-                        <div class="benefits__item">
-                            <div class="benefits__item-title">
-                                Топливоподкачивающий насос
+                        <div class="accordion__item">
+                            <div class="accordion__title" data-toggle="collapse" data-target="#accordion3" aria-expanded="false">
+                                Что необходимо для сборки теплицы?
                             </div>
-                            <div class="benefits__item-content">
-                                <div class="benefits__item-img">
-                                    <img src="./public/img/benefits/3.jpg" alt="">
-                                </div>
-                                <p class="benefits__item-text">
-                                    Топливоподкачивающий насос, который значительно облегчает запуск пилы даже на холодную.
+                            <div class="accordion__content  collapse" id="accordion3">
+                                <p>
+                                    Сборка наших теплиц осуществляется максимально просто. Из инструмента Вам необходимо иметь: шуруповерт или крестовую отвертку, канцелярский нож и гаечный ключ на 10.
                                 </p>
                             </div>
                         </div>
-
-                        <div class="benefits__item">
-                            <div class="benefits__item-title">
-                                Цепной тормоз
+                        <div class="accordion__item">
+                            <div class="accordion__title" data-toggle="collapse" data-target="#accordion4" aria-expanded="false">
+                                За какое время вы привезете мне теплицу?
                             </div>
-                            <div class="benefits__item-content">
-                                <div class="benefits__item-img">
-                                    <img src="./public/img/benefits/4.jpg" alt="">
-                                </div>
-                                <p class="benefits__item-text">
-                                    Эффективный тормоз цепи приводится в действие силами инерции.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="benefits__item">
-                            <div class="benefits__item-title">
-                                Быстросъемный воздушный фильтр
-                            </div>
-                            <div class="benefits__item-content">
-                                <div class="benefits__item-img">
-                                    <img src="./public/img/benefits/5.jpg" alt="">
-                                </div>
-                                <p class="benefits__item-text">
-                                    Существенно облегчает чистку и замену воздушного фильтра.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="benefits__item">
-                            <div class="benefits__item-title">
-                                Эноргомичная задняя рукоятка
-                            </div>
-                            <div class="benefits__item-content">
-                                <div class="benefits__item-img">
-                                    <img src="./public/img/benefits/6.jpg" alt="">
-                                </div>
-                                <p class="benefits__item-text">
-                                    Повышеный комфорт во время работы обеспечивает магкие вставки на рукоятке
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="benefits__item">
-                            <div class="benefits__item-title">
-                                Система легкого запуска
-                            </div>
-                            <div class="benefits__item-content">
-                                <div class="benefits__item-img">
-                                    <img src="./public/img/benefits/7.jpg" alt="">
-                                </div>
-                                <p class="benefits__item-text">
-                                    Стартер обеспечивает легкий запуск. Сопротивление стартера снижено на 40%.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="benefits__item">
-                            <div class="benefits__item-title">
-                                Выключатель зажигания с автовозвратом
-                            </div>
-                            <div class="benefits__item-content">
-                                <div class="benefits__item-img">
-                                    <img src="./public/img/benefits/8.jpg" alt="">
-                                </div>
-                                <p class="benefits__item-text">
-                                    Выключатель автоматически возвращается в положение ВКЛ.
+                            <div class="accordion__content  collapse" id="accordion4">
+                                <p>
+                                    В любой регион доставка осуществляется в течении 2-ух дней с момента заказа, по мере формирования маршрута. Но Вы всегда можете зафиксировать любую другую дату и время позже этих рамок.
                                 </p>
                             </div>
                         </div>
@@ -2463,7 +2419,7 @@
                 </form>
 
                 <br/>
-                <p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «ЗИКМЕС»<br/> 220131 ,Республика Беларусь, г. Минск, ул. Гамарника, д. 30, офис. 405<br/> УНП 193543133<br/> Почт. адрес : 220131, г. Минск, а/я 36<br/> р/сBY41ALFA30122A10750010270000BY61ALFA30122525830020270000
+                <p class="footer__text">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «ЗИКМЕС»<br/> 220131 ,Республика Беларусь, г. Минск, ул. Гамарника, д. 30, офис. 405<br/> УНП 193543133<br/> Почт. адрес : 220131, г. Минск, а/я 36<br/> р/сBY41ALFA30122A10750010270000BY61ALFA30122525830020270000
                     в ЗАО «Альфа-Банк», БИК ALFABY2X г. Минск, ул. Сурганова, 43-47 в лице управляющего Белоногой Т.И., действующей на основании Устава<br/> Режим работы с 8:00 до 22:00<br/> Наличный, безналичный расчет<br/> В торговом реестре с 03-09-2021,
                     № регистрации 518201</p>
 
@@ -2723,7 +2679,6 @@
                             Оставьте ваш комментарий
                         </h3>
                     </div>
-                    <!-- ./modal__header -->
 
                     <div class="modalComment__body">
                         <form class="modalComment__form" method="post" enctype="multipart/form-data">
@@ -2774,17 +2729,49 @@
                                 Отправить отзыв
                             </button>
                         </form>
-                        <!-- ./modal__form -->
                     </div>
-                    <!-- ./modal__body -->
                 </div>
-                <!-- modal__inner -->
             </div>
         </div>
-        <!-- ./modal-dialog  -->
     </div>
-    <!-- ./modal -->
 
+
+    <!--Modal Certificate-->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content certificate-modal">
+                <div class="modal-header certificate-modal-header">
+                    <button type="button" class="close modal-btn-clouse" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="public/img/certificate/S1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/img/certificate/S2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="public/img/certificate/S3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Следующий</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- CATALOG MODAL -->
     <div class="modalCatalog  modal  fade" id="catalog-modal-1" tabindex="-1" aria-hidden="false">
