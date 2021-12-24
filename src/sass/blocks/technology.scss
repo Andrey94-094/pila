@@ -14,13 +14,18 @@
         display: flex;
         justify-content: space-between;
         @media (max-width: 450px) {
-            display: block;
+            flex-wrap: wrap;
         }
     }
     &__img {
         display: block;
         width: 50%;
         padding: 3rem;
+        @media (max-width: 750px) {
+            width: 100%;
+            padding: 0;
+            order: 2;
+        }
     }
     &__bacgraund {
         background: transparent;
@@ -41,7 +46,14 @@
     &__description {
         width: 49%;
         padding: 3rem;
+        @media (max-width: 450px) {
+            width: 100%;
+        }
     }
+}
+
+.advantages-main-img img {
+    width: 100%;
 }
 
 .description {
